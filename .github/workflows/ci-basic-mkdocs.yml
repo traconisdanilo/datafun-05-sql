@@ -67,3 +67,8 @@ jobs:
           else
             echo "No mkdocs config found; skipping docs build."
           fi
+      - name: Upload DuckDB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: duckdb-database
+          path: artifacts/duckdb/*.duckdb
