@@ -55,3 +55,317 @@
 2026-02-09 22:25:10 | INFO | P05 | S001, North Market, Duluth, North, 2, 165.0, 82.5
 2026-02-09 22:25:10 | INFO | P05 | S003, Central Plaza, Mankato, South, 1, 60.0, 60.0
 2026-02-09 22:25:10 | INFO | P05 | END main()
+2026-02-09 23:11:13 | INFO | P05 | === RUN START ===
+2026-02-09 23:11:13 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-09 23:11:13 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-09 23:11:13 | INFO | P05 | python=3.14.2
+2026-02-09 23:11:13 | INFO | P05 | os=Windows 11
+2026-02-09 23:11:13 | INFO | P05 | shell=powershell
+2026-02-09 23:11:13 | INFO | P05 | cwd=.
+2026-02-09 23:11:13 | INFO | P05 | github_actions=False
+2026-02-09 23:11:13 | INFO | P05 | START main()
+2026-02-09 23:11:13 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-09 23:11:13 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\retail
+2026-02-09 23:11:13 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-09 23:11:13 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\retail.duckdb
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_clean.sql
+2026-02-09 23:11:13 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_clean.sql
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_bootstrap.sql
+2026-02-09 23:11:13 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_bootstrap.sql
+2026-02-09 23:11:13 | INFO | P05 | 
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_store_count.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | case_retail_query_store_count.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | store_count
+2026-02-09 23:11:13 | INFO | P05 | 3
+2026-02-09 23:11:13 | INFO | P05 | 
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_count.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | case_retail_query_sales_count.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | sale_count
+2026-02-09 23:11:13 | INFO | P05 | 5
+2026-02-09 23:11:13 | INFO | P05 | 
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_aggregate.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | case_retail_query_sales_aggregate.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | sale_count, total_revenue, avg_sale_amount
+2026-02-09 23:11:13 | INFO | P05 | 5, 505.0, 101.0
+2026-02-09 23:11:13 | INFO | P05 | 
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_by_category.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | case_retail_query_sales_by_category.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | product_category, sale_count, total_revenue, avg_sale_amount
+2026-02-09 23:11:13 | INFO | P05 | Outdoors, 1, 250.0, 250.0
+2026-02-09 23:11:13 | INFO | P05 | Clothing, 2, 180.0, 90.0
+2026-02-09 23:11:13 | INFO | P05 | Food, 2, 75.0, 37.5
+2026-02-09 23:11:13 | INFO | P05 | 
+2026-02-09 23:11:13 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_kpi_revenue.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | case_retail_query_kpi_revenue.sql
+2026-02-09 23:11:13 | INFO | P05 | ====================================
+2026-02-09 23:11:13 | INFO | P05 | store_id, store_name, city, region, sale_count, total_revenue, avg_sale_amount
+2026-02-09 23:11:13 | INFO | P05 | S002, Lakeside Shop, Ely, North, 2, 280.0, 140.0
+2026-02-09 23:11:13 | INFO | P05 | S001, North Market, Duluth, North, 2, 165.0, 82.5
+2026-02-09 23:11:13 | INFO | P05 | S003, Central Plaza, Mankato, South, 1, 60.0, 60.0
+2026-02-09 23:11:13 | INFO | P05 | END main()
+2026-02-13 20:43:10 | INFO | P05 | === RUN START ===
+2026-02-13 20:43:10 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-13 20:43:10 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-13 20:43:10 | INFO | P05 | python=3.14.2
+2026-02-13 20:43:10 | INFO | P05 | os=Windows 11
+2026-02-13 20:43:10 | INFO | P05 | shell=powershell
+2026-02-13 20:43:10 | INFO | P05 | cwd=.
+2026-02-13 20:43:10 | INFO | P05 | github_actions=False
+2026-02-13 20:43:10 | INFO | P05 | START main()
+2026-02-13 20:43:10 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-13 20:43:10 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\retail
+2026-02-13 20:43:10 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-13 20:43:10 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\retail.duckdb
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_clean.sql
+2026-02-13 20:43:10 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_clean.sql
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_bootstrap.sql
+2026-02-13 20:43:10 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_bootstrap.sql
+2026-02-13 20:43:10 | INFO | P05 | 
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_store_count.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | case_retail_query_store_count.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | store_count
+2026-02-13 20:43:10 | INFO | P05 | 3
+2026-02-13 20:43:10 | INFO | P05 | 
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_count.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | case_retail_query_sales_count.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | sale_count
+2026-02-13 20:43:10 | INFO | P05 | 5
+2026-02-13 20:43:10 | INFO | P05 | 
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_aggregate.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | case_retail_query_sales_aggregate.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | sale_count, total_revenue, avg_sale_amount
+2026-02-13 20:43:10 | INFO | P05 | 5, 505.0, 101.0
+2026-02-13 20:43:10 | INFO | P05 | 
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_sales_by_category.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | case_retail_query_sales_by_category.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | product_category, sale_count, total_revenue, avg_sale_amount
+2026-02-13 20:43:10 | INFO | P05 | Outdoors, 1, 250.0, 250.0
+2026-02-13 20:43:10 | INFO | P05 | Clothing, 2, 180.0, 90.0
+2026-02-13 20:43:10 | INFO | P05 | Food, 2, 75.0, 37.5
+2026-02-13 20:43:10 | INFO | P05 | 
+2026-02-13 20:43:10 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\case_retail_query_kpi_revenue.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | case_retail_query_kpi_revenue.sql
+2026-02-13 20:43:10 | INFO | P05 | ====================================
+2026-02-13 20:43:10 | INFO | P05 | store_id, store_name, city, region, sale_count, total_revenue, avg_sale_amount
+2026-02-13 20:43:10 | INFO | P05 | S002, Lakeside Shop, Ely, North, 2, 280.0, 140.0
+2026-02-13 20:43:10 | INFO | P05 | S001, North Market, Duluth, North, 2, 165.0, 82.5
+2026-02-13 20:43:10 | INFO | P05 | S003, Central Plaza, Mankato, South, 1, 60.0, 60.0
+2026-02-13 20:43:10 | INFO | P05 | END main()
+2026-02-13 21:47:21 | INFO | P05 | === RUN START ===
+2026-02-13 21:47:21 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-13 21:47:21 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-13 21:47:21 | INFO | P05 | python=3.14.2
+2026-02-13 21:47:21 | INFO | P05 | os=Windows 11
+2026-02-13 21:47:21 | INFO | P05 | shell=powershell
+2026-02-13 21:47:21 | INFO | P05 | cwd=.
+2026-02-13 21:47:21 | INFO | P05 | github_actions=False
+2026-02-13 21:47:21 | INFO | P05 | START main()
+2026-02-13 21:47:21 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-13 21:47:21 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\civic_event
+2026-02-13 21:47:21 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-13 21:47:21 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\civic_event.duckdb
+2026-02-13 21:47:21 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:47:21 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:47:21 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:47:21 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:47:21 | INFO | P05 | 
+2026-02-13 21:47:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:47:21 | INFO | P05 | ====================================
+2026-02-13 21:47:21 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:47:21 | INFO | P05 | ====================================
+2026-02-13 21:47:21 | INFO | P05 | event_count
+2026-02-13 21:47:21 | INFO | P05 | 3
+2026-02-13 21:47:21 | INFO | P05 | 
+2026-02-13 21:47:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:47:21 | INFO | P05 | ====================================
+2026-02-13 21:47:21 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:47:21 | INFO | P05 | ====================================
+2026-02-13 21:47:21 | INFO | P05 | attendance_count
+2026-02-13 21:47:21 | INFO | P05 | 5
+2026-02-13 21:47:21 | INFO | P05 | 
+2026-02-13 21:47:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:47:22 | INFO | P05 | ====================================
+2026-02-13 21:47:22 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:47:22 | INFO | P05 | ====================================
+2026-02-13 21:47:22 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-13 21:47:22 | INFO | P05 | 5, 105.0, 21.0
+2026-02-13 21:47:22 | INFO | P05 | 
+2026-02-13 21:47:22 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_sales_attendee_type.sql
+2026-02-13 21:50:58 | INFO | P05 | === RUN START ===
+2026-02-13 21:50:58 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-13 21:50:58 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-13 21:50:58 | INFO | P05 | python=3.14.2
+2026-02-13 21:50:58 | INFO | P05 | os=Windows 11
+2026-02-13 21:50:58 | INFO | P05 | shell=powershell
+2026-02-13 21:50:58 | INFO | P05 | cwd=.
+2026-02-13 21:50:58 | INFO | P05 | github_actions=False
+2026-02-13 21:50:58 | INFO | P05 | START main()
+2026-02-13 21:50:58 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-13 21:50:58 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\civic_event
+2026-02-13 21:50:58 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-13 21:50:58 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\civic_event.duckdb
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:50:58 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:50:58 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:50:58 | INFO | P05 | 
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | event_count
+2026-02-13 21:50:58 | INFO | P05 | 3
+2026-02-13 21:50:58 | INFO | P05 | 
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | attendance_count
+2026-02-13 21:50:58 | INFO | P05 | 5
+2026-02-13 21:50:58 | INFO | P05 | 
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-13 21:50:58 | INFO | P05 | 5, 105.0, 21.0
+2026-02-13 21:50:58 | INFO | P05 | 
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-13 21:50:58 | INFO | P05 | ====================================
+2026-02-13 21:50:58 | INFO | P05 | attendee_type, attendance_count, total_contributions, avg_contribution
+2026-02-13 21:50:58 | INFO | P05 | Guest, 3, 55.0, 18.333333333333332
+2026-02-13 21:50:58 | INFO | P05 | Member, 2, 50.0, 25.0
+2026-02-13 21:50:58 | INFO | P05 | 
+2026-02-13 21:50:58 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_kpi.sql
+2026-02-13 21:51:46 | INFO | P05 | === RUN START ===
+2026-02-13 21:51:46 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-13 21:51:46 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-13 21:51:46 | INFO | P05 | python=3.14.2
+2026-02-13 21:51:46 | INFO | P05 | os=Windows 11
+2026-02-13 21:51:46 | INFO | P05 | shell=powershell
+2026-02-13 21:51:46 | INFO | P05 | cwd=.
+2026-02-13 21:51:46 | INFO | P05 | github_actions=False
+2026-02-13 21:51:46 | INFO | P05 | START main()
+2026-02-13 21:51:46 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-13 21:51:46 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\civic_event
+2026-02-13 21:51:46 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-13 21:51:46 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\civic_event.duckdb
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:51:46 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:51:46 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:51:46 | INFO | P05 | 
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | event_count
+2026-02-13 21:51:46 | INFO | P05 | 3
+2026-02-13 21:51:46 | INFO | P05 | 
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | attendance_count
+2026-02-13 21:51:46 | INFO | P05 | 5
+2026-02-13 21:51:46 | INFO | P05 | 
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-13 21:51:46 | INFO | P05 | 5, 105.0, 21.0
+2026-02-13 21:51:46 | INFO | P05 | 
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | attendee_type, attendance_count, total_contributions, avg_contribution
+2026-02-13 21:51:46 | INFO | P05 | Guest, 3, 55.0, 18.333333333333332
+2026-02-13 21:51:46 | INFO | P05 | Member, 2, 50.0, 25.0
+2026-02-13 21:51:46 | INFO | P05 | 
+2026-02-13 21:51:46 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-13 21:51:46 | INFO | P05 | ====================================
+2026-02-13 21:51:46 | INFO | P05 | civic_event_id, event_name, location, organizer, attendance_count, total_contribution, avg_contribution
+2026-02-13 21:51:46 | INFO | P05 | E001, Winter Fundraiser, Ely, Community Council, 2, 75.0, 37.5
+2026-02-13 21:51:46 | INFO | P05 | E003, Arts Fair, Mankato, Arts Alliance, 1, 20.0, 20.0
+2026-02-13 21:51:46 | INFO | P05 | E002, Tech Meetup, Duluth, North Tech Group, 2, 10.0, 5.0
+2026-02-13 21:51:46 | INFO | P05 | END main()
+2026-02-13 21:56:44 | INFO | P05 | === RUN START ===
+2026-02-13 21:56:44 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-13 21:56:44 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-13 21:56:44 | INFO | P05 | python=3.14.2
+2026-02-13 21:56:44 | INFO | P05 | os=Windows 11
+2026-02-13 21:56:44 | INFO | P05 | shell=powershell
+2026-02-13 21:56:44 | INFO | P05 | cwd=.
+2026-02-13 21:56:44 | INFO | P05 | github_actions=False
+2026-02-13 21:56:44 | INFO | P05 | START main()
+2026-02-13 21:56:44 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-13 21:56:44 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\civic_event
+2026-02-13 21:56:44 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-13 21:56:44 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\civic_event.duckdb
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:56:44 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:56:44 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-13 21:56:44 | INFO | P05 | 
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | event_count
+2026-02-13 21:56:44 | INFO | P05 | 3
+2026-02-13 21:56:44 | INFO | P05 | 
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | attendance_count
+2026-02-13 21:56:44 | INFO | P05 | 5
+2026-02-13 21:56:44 | INFO | P05 | 
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-13 21:56:44 | INFO | P05 | 5, 105.0, 21.0
+2026-02-13 21:56:44 | INFO | P05 | 
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | attendee_type, attendance_count, total_contributions, avg_contribution
+2026-02-13 21:56:44 | INFO | P05 | Guest, 3, 55.0, 18.333333333333332
+2026-02-13 21:56:44 | INFO | P05 | Member, 2, 50.0, 25.0
+2026-02-13 21:56:44 | INFO | P05 | 
+2026-02-13 21:56:44 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-13 21:56:44 | INFO | P05 | ====================================
+2026-02-13 21:56:44 | INFO | P05 | civic_event_id, event_name, location, organizer, attendance_count, total_contribution, avg_contribution
+2026-02-13 21:56:44 | INFO | P05 | E001, Winter Fundraiser, Ely, Community Council, 2, 75.0, 37.5
+2026-02-13 21:56:44 | INFO | P05 | E003, Arts Fair, Mankato, Arts Alliance, 1, 20.0, 20.0
+2026-02-13 21:56:44 | INFO | P05 | E002, Tech Meetup, Duluth, North Tech Group, 2, 10.0, 5.0
+2026-02-13 21:56:44 | INFO | P05 | END main()
