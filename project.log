@@ -481,3 +481,200 @@
 2026-02-13 23:44:46 | INFO | P05 | E003, Arts Fair, Mankato, Arts Alliance, 1, 20.0, 20.0
 2026-02-13 23:44:46 | INFO | P05 | E002, Tech Meetup, Duluth, North Tech Group, 2, 10.0, 5.0
 2026-02-13 23:44:46 | INFO | P05 | END main()
+2026-02-14 00:08:21 | INFO | P05 | === RUN START ===
+2026-02-14 00:08:21 | INFO | P05 | project=P05 Pipeline Example (DuckDB)
+2026-02-14 00:08:21 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-14 00:08:21 | INFO | P05 | python=3.14.2
+2026-02-14 00:08:21 | INFO | P05 | os=Windows 11
+2026-02-14 00:08:21 | INFO | P05 | shell=powershell
+2026-02-14 00:08:21 | INFO | P05 | cwd=.
+2026-02-14 00:08:21 | INFO | P05 | github_actions=False
+2026-02-14 00:08:21 | INFO | P05 | START main()
+2026-02-14 00:08:21 | INFO | P05 | ROOT_DIR: C:\Repos\datafun-05-sql
+2026-02-14 00:08:21 | INFO | P05 | DATA_DIR: C:\Repos\datafun-05-sql\data\civic_event
+2026-02-14 00:08:21 | INFO | P05 | SQL_DIR: C:\Repos\datafun-05-sql\sql\duckdb
+2026-02-14 00:08:21 | INFO | P05 | DB_PATH: C:\Repos\datafun-05-sql\artifacts\duckdb\civic_event.duckdb
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:08:21 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:08:21 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:08:21 | INFO | P05 | 
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | event_count
+2026-02-14 00:08:21 | INFO | P05 | 3
+2026-02-14 00:08:21 | INFO | P05 | 
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | attendance_count
+2026-02-14 00:08:21 | INFO | P05 | 5
+2026-02-14 00:08:21 | INFO | P05 | 
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-14 00:08:21 | INFO | P05 | 5, 105.0, 21.0
+2026-02-14 00:08:21 | INFO | P05 | 
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | attendee_type, attendance_count, total_contributions, avg_contribution
+2026-02-14 00:08:21 | INFO | P05 | Guest, 3, 55.0, 18.333333333333332
+2026-02-14 00:08:21 | INFO | P05 | Member, 2, 50.0, 25.0
+2026-02-14 00:08:21 | INFO | P05 | 
+2026-02-14 00:08:21 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\duckdb\traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-14 00:08:21 | INFO | P05 | ====================================
+2026-02-14 00:08:21 | INFO | P05 | civic_event_id, event_name, location, organizer, attendance_count, total_contribution, avg_contribution
+2026-02-14 00:08:21 | INFO | P05 | E001, Winter Fundraiser, Ely, Community Council, 2, 75.0, 37.5
+2026-02-14 00:08:21 | INFO | P05 | E003, Arts Fair, Mankato, Arts Alliance, 1, 20.0, 20.0
+2026-02-14 00:08:21 | INFO | P05 | E002, Tech Meetup, Duluth, North Tech Group, 2, 10.0, 5.0
+2026-02-14 00:08:21 | INFO | P05 | END main()
+2026-02-14 00:39:34 | INFO | P05 | === RUN START ===
+2026-02-14 00:39:34 | INFO | P05 | project=P05 Civic Event Pipeline (SQLite)
+2026-02-14 00:39:34 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-14 00:39:34 | INFO | P05 | python=3.14.2
+2026-02-14 00:39:34 | INFO | P05 | os=Windows 11
+2026-02-14 00:39:34 | INFO | P05 | shell=powershell
+2026-02-14 00:39:34 | INFO | P05 | cwd=.
+2026-02-14 00:39:34 | INFO | P05 | github_actions=False
+2026-02-14 00:39:34 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:39:34 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:39:34 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:44:16 | INFO | P05 | === RUN START ===
+2026-02-14 00:44:16 | INFO | P05 | project=P05 Civic Event Pipeline (SQLite)
+2026-02-14 00:44:16 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-14 00:44:16 | INFO | P05 | python=3.14.2
+2026-02-14 00:44:16 | INFO | P05 | os=Windows 11
+2026-02-14 00:44:16 | INFO | P05 | shell=powershell
+2026-02-14 00:44:16 | INFO | P05 | cwd=.
+2026-02-14 00:44:16 | INFO | P05 | github_actions=False
+2026-02-14 00:44:16 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:44:16 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:44:16 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:44:16 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:44:16 | INFO | P05 | 
+2026-02-14 00:44:16 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 00:50:26 | INFO | P05 | === RUN START ===
+2026-02-14 00:50:26 | INFO | P05 | project=P05 Civic Event Pipeline (SQLite)
+2026-02-14 00:50:26 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-14 00:50:26 | INFO | P05 | python=3.14.2
+2026-02-14 00:50:26 | INFO | P05 | os=Windows 11
+2026-02-14 00:50:26 | INFO | P05 | shell=powershell
+2026-02-14 00:50:26 | INFO | P05 | cwd=.
+2026-02-14 00:50:26 | INFO | P05 | github_actions=False
+2026-02-14 00:50:26 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:50:26 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:50:26 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:50:26 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:50:26 | INFO | P05 | 
+2026-02-14 00:50:26 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 00:59:31 | INFO | P05 | === RUN START ===
+2026-02-14 00:59:31 | INFO | P05 | project=P05 Civic Event Pipeline (SQLite)
+2026-02-14 00:59:31 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-14 00:59:31 | INFO | P05 | python=3.14.2
+2026-02-14 00:59:31 | INFO | P05 | os=Windows 11
+2026-02-14 00:59:31 | INFO | P05 | shell=powershell
+2026-02-14 00:59:31 | INFO | P05 | cwd=.
+2026-02-14 00:59:31 | INFO | P05 | github_actions=False
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:59:31 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:59:31 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 00:59:31 | INFO | P05 | 
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | event_count
+2026-02-14 00:59:31 | INFO | P05 | 3
+2026-02-14 00:59:31 | INFO | P05 | 
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | attendance_count
+2026-02-14 00:59:31 | INFO | P05 | 5
+2026-02-14 00:59:31 | INFO | P05 | 
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-14 00:59:31 | INFO | P05 | 5, 105.0, 21.0
+2026-02-14 00:59:31 | INFO | P05 | 
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | attendee_type, attendance_count, total_contributions, avg_contribution
+2026-02-14 00:59:31 | INFO | P05 | Guest, 3, 55.0, 18.333333333333332
+2026-02-14 00:59:31 | INFO | P05 | Member, 2, 50.0, 25.0
+2026-02-14 00:59:31 | INFO | P05 | 
+2026-02-14 00:59:31 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-14 00:59:31 | INFO | P05 | ====================================
+2026-02-14 00:59:31 | INFO | P05 | civic_event_id, event_name, location, organizer, attendance_count, total_contribution, avg_contribution
+2026-02-14 00:59:31 | INFO | P05 | E001, Winter Fundraiser, Ely, Community Council, 2, 75.0, 37.5
+2026-02-14 00:59:31 | INFO | P05 | E003, Arts Fair, Mankato, Arts Alliance, 1, 20.0, 20.0
+2026-02-14 00:59:31 | INFO | P05 | E002, Tech Meetup, Duluth, North Tech Group, 2, 10.0, 5.0
+2026-02-14 00:59:31 | INFO | P05 | END main()
+2026-02-14 01:15:52 | INFO | P05 | === RUN START ===
+2026-02-14 01:15:52 | INFO | P05 | project=P05 Civic Event Pipeline (SQLite)
+2026-02-14 01:15:52 | INFO | P05 | repo_dir=datafun-05-sql
+2026-02-14 01:15:52 | INFO | P05 | python=3.14.2
+2026-02-14 01:15:52 | INFO | P05 | os=Windows 11
+2026-02-14 01:15:52 | INFO | P05 | shell=powershell
+2026-02-14 01:15:52 | INFO | P05 | cwd=.
+2026-02-14 01:15:52 | INFO | P05 | github_actions=False
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 01:15:52 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_clean.sql
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 01:15:52 | INFO | P05 | DONE SQL script: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_bootstrap.sql
+2026-02-14 01:15:52 | INFO | P05 | 
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | traconisdanilo_civic_event_query_event_count.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | event_count
+2026-02-14 01:15:52 | INFO | P05 | 3
+2026-02-14 01:15:52 | INFO | P05 | 
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | traconisdanilo_civic_event_query_attendance_count.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | attendance_count
+2026-02-14 01:15:52 | INFO | P05 | 5
+2026-02-14 01:15:52 | INFO | P05 | 
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | traconisdanilo_civic_event_query_attendance_aggregate.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | attendance_count, total_contributions, avg_contribution
+2026-02-14 01:15:52 | INFO | P05 | 5, 105.0, 21.0
+2026-02-14 01:15:52 | INFO | P05 | 
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | traconisdanilo_civic_event_query_attendance_by_type.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | attendee_type, attendance_count, total_contributions, avg_contribution
+2026-02-14 01:15:52 | INFO | P05 | Guest, 3, 55.0, 18.333333333333332
+2026-02-14 01:15:52 | INFO | P05 | Member, 2, 50.0, 25.0
+2026-02-14 01:15:52 | INFO | P05 | 
+2026-02-14 01:15:52 | INFO | P05 | RUN SQL query: C:\Repos\datafun-05-sql\sql\sqlite\traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | traconisdanilo_civic_event_query_kpi_contributions.sql
+2026-02-14 01:15:52 | INFO | P05 | ====================================
+2026-02-14 01:15:52 | INFO | P05 | civic_event_id, event_name, location, organizer, attendance_count, total_contribution, avg_contribution
+2026-02-14 01:15:52 | INFO | P05 | E001, Winter Fundraiser, Ely, Community Council, 2, 75.0, 37.5
+2026-02-14 01:15:52 | INFO | P05 | E003, Arts Fair, Mankato, Arts Alliance, 1, 20.0, 20.0
+2026-02-14 01:15:52 | INFO | P05 | E002, Tech Meetup, Duluth, North Tech Group, 2, 10.0, 5.0
+2026-02-14 01:15:52 | INFO | P05 | END main()

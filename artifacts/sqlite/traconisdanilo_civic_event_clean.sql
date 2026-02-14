@@ -1,0 +1,6 @@
+BEGIN;
+
+DROP TABLE IF EXISTS attendance;
+DROP TABLE IF EXISTS civic_event;
+
+COMMIT;
