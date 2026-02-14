@@ -108,5 +108,4 @@ dist/
 # WHY: Notebook checkpoint state is generated.
 .ipynb_checkpoints/
 
-artifacts/duckdb/*.duckdb
-!artifacts/duckdb/retail.duckdb
+!artifacts/duckdb/civic_event.duckdb
